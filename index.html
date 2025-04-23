@@ -18,6 +18,8 @@
             --glass-effect: rgba(255, 255, 255, 0.03);
         }
 
+
+
         * {
             margin: 0;
             padding: 0;
@@ -1012,7 +1014,6 @@
             pointer-events: none;
             z-index: 9999;
             transition: width 0.3s, height 0.3s, background 0.3s;
-            display: none;
         }
 
         .cursor.active {
@@ -1072,7 +1073,7 @@
     <div class="cursor"></div>
 
     <div class="theme-toggle">
-        <i class="fas fa-adjust"></i>
+        <i class="fas fa-moon"></i> <!-- Default shows moon (dark mode) -->
     </div>
 
     <!-- Navbar -->
@@ -1308,7 +1309,7 @@
 
                 <!-- Tools & Frameworks -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
                     <ul class="skill-list">
                         <li class="skill-item">
                             <div class="skill-icon"><i class="fab fa-react"></i></div>
@@ -1350,7 +1351,7 @@
 
                 <!-- Cybersecurity -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <h3><i class="fas fa-shield-alt"></i> Cybersec</h3>
                     <ul class="skill-list">
                         <li class="skill-item">
                             <div class="skill-icon"><i class="fas fa-bug"></i></div>
@@ -1897,6 +1898,61 @@
 
         // Add scroll event listener
         window.addEventListener('scroll', revealOnScroll);
+
+        // Add this to activate theme toggle rotation
+        document.querySelector('.theme-toggle').addEventListener('click', function () {
+            this.querySelector('i').classList.toggle('rotated');
+        });
+
+        // Theme Toggle Functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+
+        // Check for saved user preference or use system preference
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'light' || (!savedTheme && !systemPrefersDark)) {
+                document.documentElement.classList.add('light-theme');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+        }
+
+        // Toggle theme function
+        function toggleTheme() {
+            const htmlEl = document.documentElement;
+            htmlEl.classList.toggle('light-theme');
+
+            if (htmlEl.classList.contains('light-theme')) {
+                localStorage.setItem('theme', 'light');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                localStorage.setItem('theme', 'dark');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+
+        // Initialize theme on load
+        initializeTheme();
+
+        // Add click event
+        themeToggle.addEventListener('click', toggleTheme);
+
+        // Custom cursor effect (optional)
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('active');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('active');
+        });
     </script>
 </body>
 
