@@ -400,5 +400,15 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Custom
-index_backup.html
-index_backup_new.html
+temp/
+.vscode
+
+assets/
+dev/
+v1/
+v2/
+v3/
+v4/
+v4_bak/
+v5/
+v6/
