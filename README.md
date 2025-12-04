@@ -1,84 +1,131 @@
-# Supun Hewagamage - Personal Portfolio Website
+# Supun Hewagamage - Personal Website
 
-[![Website Status](https://img.shields.io/badge/status-under%20development-orange)](https://supunhg.github.io)
-[![GitHub Pages](https://img.shields.io/badge/deployed%20on-GitHub%20Pages-brightgreen)](https://pages.github.com/)
+Modern, dynamic personal website showcasing my work in offensive security, security tool development, and cybersecurity research.
 
-## 🚧 Currently Under Development
+## 🌐 Live Site
 
-This repository contains the source code for my personal portfolio website hosted on GitHub Pages. The site is currently under active development and will showcase my projects, skills, and professional experience.
+Visit: [supunhg.github.io](https://supunhg.github.io)
 
-## 📋 Planned Features
+## ✨ Overview
 
-- **Modern Design**: Clean, responsive design with dark theme and electric blue accents
-- **Project Showcase**: Gallery of my development projects with live demos and source code links
-- **Skills & Certifications**: Technical skills overview and professional certifications
-- **Professional Experience**: Work history and achievements
-- **Contact Information**: Multiple ways to get in touch
-- **Blog Section**: Technical articles and insights (coming soon)
+This repository contains the source code for my personal portfolio website hosted on GitHub Pages. The site features a modern dark cybersecurity theme with dynamic animations and showcases my security projects, research, and professional experience.
 
-## 🛠️ Tech Stack
 
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
-- **Styling**: Custom CSS with modern features (Grid, Flexbox, CSS Variables)
-- **Deployment**: GitHub Pages
-- **Version Control**: Git
+## 📋 Features
+
+- **Multi-page Layout**: Home, Projects, Blog, and Contact pages
+- **Dark Cybersecurity Theme**: Royal blue accents with dynamic particle animations
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Dynamic Effects**: Particle canvas, typing animations, smooth scrolling
+- **SEO Optimized**: Proper meta tags and semantic HTML
+- **No Dependencies**: Pure HTML, CSS, and JavaScript (no build process)
+- **GitHub Pages Ready**: Deploy instantly with zero configuration
 
 ## 📁 Project Structure
 
 ```
-├── index.html         # Main website file
-├── README.md          # Project documentation
-└── assets/            # Images, icons, and other assets 
+supunhg.github.io/
+├── index.html          # Homepage
+├── projects.html       # Projects showcase
+├── blog.html          # Blog listing page
+├── contact.html       # Contact information
+├── css/
+│   └── styles.css     # Main stylesheet
+├── js/
+│   └── main.js        # JavaScript functionality
+└── README.md          # This file
 ```
 
-## 🚀 Development Status
+## 🛠️ Technologies
 
-**Current Progress: 85% Complete**
+- **HTML5**: Semantic markup
+- **CSS3**: Custom properties, Grid, Flexbox, animations
+- **JavaScript (ES6+)**: Classes, modern features
+- **Font Awesome**: Icons
+- **Google Fonts**: Inter typography
 
-- [x] Basic HTML structure
-- [x] Modern CSS styling with dark theme
-- [x] Responsive design framework
-- [x] Interactive animations and effects
-- [x] Content structure and layout
-- [x] Basic functionality implementation
-- [ ] Final content review and refinement
-- [ ] Performance optimization
-- [ ] Cross-browser testing
 
-## 📱 Responsive Design
+## 🚀 Getting Started
 
-The website is designed to work seamlessly across all device sizes:
-- Desktop (1200px+)
-- Tablet (768px - 1199px)
-- Mobile (320px - 767px)
+### Local Development
 
-## 🎨 Design System
+1. Clone the repository:
+```bash
+git clone https://github.com/supunhg/supunhg.github.io.git
+cd supunhg.github.io
+```
 
-### Color Palette
-- **Primary Background**: #121a2b (Dark Navy)
-- **Card Background**: #1a2438 (Lighter Navy)
-- **Accent Primary**: #00c2ff (Electric Blue)
-- **Accent Secondary**: #39ff14 (Neon Green)
-- **Text Primary**: #ffffff (White)
-- **Text Secondary**: #b1b9cb (Light Gray)
+2. Open `index.html` in your browser or use a local server:
+```bash
+# Python 3
+python -m http.server 8000
 
-### Typography
-- **Font Family**: Inter, system fonts fallback
-- **Headings**: Bold weights with gradient effects
-- **Body Text**: Regular weight with good contrast
+# Node.js
+npx http-server
+```
 
-## 🔗 Links
+3. Visit `http://localhost:8000`
 
-- **Live Site**: [https://supunhg.github.io](https://supunhg.github.io)
-- **Repository**: [https://github.com/supunhg/supunhg.github.io](https://github.com/supunhg/supunhg.github.io)
+### Deployment
 
-## 📞 Contact
+GitHub Pages deployment is automatic:
+1. Push changes to the `main` branch
+2. GitHub Pages will automatically build and deploy
+3. Site will be live at `https://supunhg.github.io`
 
-Feel free to reach out if you have any questions or suggestions:
+## 📝 Adding Blog Posts
 
-- **GitHub**: [@supunhg](https://github.com/supunhg)
-- **Email**: [Contact through GitHub](https://github.com/supunhg)
+This is a static site with manual blog management:
+
+1. Create a new HTML file in `blog/posts/` directory
+2. Use the same layout structure (navbar, footer) from existing pages
+3. Update `blog.html` to add a card linking to your new post
+4. Include metadata: date, reading time, category
+
+## 🎯 Customization
+
+### Colors
+Edit CSS variables in `css/styles.css`:
+```css
+:root {
+    --royal-blue: #2563eb;
+    --electric-blue: #00d4ff;
+    --dark-bg: #0a0e1a;
+}
+```
+
+### Animations
+Modify particle settings in `js/main.js`:
+```javascript
+this.particleCount = 50;
+this.connectionDistance = 150;
+```
+
+
+## 📱 Browser Support
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 👤 Author
+
+**Supun Hewagamage**
+- GitHub: [@supunhg](https://github.com/supunhg)
+- LinkedIn: [supunhewagamage](https://linkedin.com/in/supunhewagamage)
+- Email: sanchithahewagamage@gmail.com
+
+## 📄 License
+
+This project is open source and available under the MIT License.
 
 ---
 
-⚠️ **Note**: The current live site may contain placeholder or test content as it's still in development. The final version will contain accurate and up-to-date information.
+<p align="center">
+  <i>"Evolve daily, or decay quietly." - Supun Hewagamage</i>
+</p>
+
+<p align="center">
+  Made with 💙 and ☕
+</p>

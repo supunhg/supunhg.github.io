@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Security insights, research, and technical writeups by Supun Hewagamage.">
+    
+    <title>Blog | Supun Hewagamage</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <canvas class="bg-canvas" id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SupunHG</a>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 100vh;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <i class="fas fa-pen-nib"></i> Security Insights
+                </div>
+                <h1 style="font-size: 3.5rem;">Blog & Research</h1>
+                <p class="typing-text" style="margin-bottom: 2rem;">
+                    Technical writeups, security research, and insights from the field
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Latest Posts</div>
+                <h2 class="section-title">Recent Articles</h2>
+                <p class="section-subtitle">
+                    Security research, tool development insights, and CTF writeups
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <!-- Placeholder Post 1 -->
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <span>📝</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Coming Soon</span>
+                        <span><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <h3 class="blog-title">Building Nemue: A High-Performance Network Scanner in Rust</h3>
+                    <p class="blog-excerpt">
+                        Deep dive into the architecture and design decisions behind Nemue, exploring how Rust's 
+                        performance characteristics make it ideal for network security tools.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Placeholder Post 2 -->
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <span>🔐</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Coming Soon</span>
+                        <span><i class="far fa-clock"></i> 8 min read</span>
+                    </div>
+                    <h3 class="blog-title">Covert Channels: Beyond Traditional Data Exfiltration</h3>
+                    <p class="blog-excerpt">
+                        Exploring advanced techniques for data exfiltration using ICMP, DNS, and HTTP protocols. 
+                        A technical overview of the CoCo framework and evasion strategies.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Placeholder Post 3 -->
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <span>🎯</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Coming Soon</span>
+                        <span><i class="far fa-clock"></i> 10 min read</span>
+                    </div>
+                    <h3 class="blog-title">Linux Privilege Escalation: A Comprehensive Guide</h3>
+                    <p class="blog-excerpt">
+                        Complete walkthrough of Linux privilege escalation techniques, from basic misconfigurations 
+                        to advanced kernel exploits. Includes practical examples and GTFOBins usage.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Placeholder Post 4 -->
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <span>🌐</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Coming Soon</span>
+                        <span><i class="far fa-clock"></i> 6 min read</span>
+                    </div>
+                    <h3 class="blog-title">Web Application Exploitation: From Recon to RCE</h3>
+                    <p class="blog-excerpt">
+                        Step-by-step methodology for web application penetration testing. Covering reconnaissance, 
+                        vulnerability identification, and exploitation techniques.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Placeholder Post 5 -->
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <span>🦠</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Coming Soon</span>
+                        <span><i class="far fa-clock"></i> 12 min read</span>
+                    </div>
+                    <h3 class="blog-title">Malware Analysis: Static and Dynamic Techniques</h3>
+                    <p class="blog-excerpt">
+                        Introduction to malware analysis methodologies. Learn how to safely analyze suspicious 
+                        binaries using both static and dynamic analysis approaches.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Placeholder Post 6 -->
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <span>🤖</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> Coming Soon</span>
+                        <span><i class="far fa-clock"></i> 7 min read</span>
+                    </div>
+                    <h3 class="blog-title">AI Security: Prompt Injection and Jailbreaking Techniques</h3>
+                    <p class="blog-excerpt">
+                        Exploring security vulnerabilities in AI chatbots and large language models. Understanding 
+                        prompt injection attacks and defense mechanisms.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTF Writeups Section -->
+    <section class="section" style="background: rgba(5, 8, 16, 0.5);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">CTF Writeups</div>
+                <h2 class="section-title">Capture The Flag Solutions</h2>
+                <p class="section-subtitle">
+                    Detailed writeups from various CTF platforms and competitions
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <!-- CTF Placeholder 1 -->
+                <div class="card blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, rgba(255, 68, 68, 0.3), rgba(255, 120, 68, 0.2));">
+                        <span>🚩</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-flag"></i> TryHackMe</span>
+                        <span><i class="far fa-clock"></i> Coming Soon</span>
+                    </div>
+                    <h3 class="blog-title">TryHackMe: Advanced Exploitation Challenges</h3>
+                    <p class="blog-excerpt">
+                        Collection of writeups from advanced TryHackMe rooms covering web exploitation, 
+                        privilege escalation, and active directory attacks.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- CTF Placeholder 2 -->
+                <div class="card blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, rgba(68, 255, 68, 0.3), rgba(68, 255, 200, 0.2));">
+                        <span>⚔️</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-cube"></i> HackTheBox</span>
+                        <span><i class="far fa-clock"></i> Coming Soon</span>
+                    </div>
+                    <h3 class="blog-title">HackTheBox: Machine Walkthroughs</h3>
+                    <p class="blog-excerpt">
+                        Step-by-step solutions for retired HackTheBox machines. Detailed methodology and 
+                        tool usage for realistic penetration testing scenarios.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- CTF Placeholder 3 -->
+                <div class="card blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, rgba(255, 200, 68, 0.3), rgba(255, 150, 68, 0.2));">
+                        <span>🏆</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-trophy"></i> picoCTF</span>
+                        <span><i class="far fa-clock"></i> Coming Soon</span>
+                    </div>
+                    <h3 class="blog-title">picoCTF: Binary Exploitation & Cryptography</h3>
+                    <p class="blog-excerpt">
+                        Solutions for challenging picoCTF problems focusing on binary exploitation, 
+                        reverse engineering, and cryptographic challenges.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Info -->
+    <section class="section">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Want to Stay Updated?</h2>
+                <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
+                    New articles and CTF writeups are added regularly. Follow me on GitHub and LinkedIn 
+                    to get notified when new content is published.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/supunhg" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> Follow on GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/supunhewagamage" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Supun Hewagamage</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        Offensive Security Specialist building tools to make the digital world more secure.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/supunhg" class="social-link" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/supunhewagamage" class="social-link" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sanchithahewagamage@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/supunhg/Nemue" target="_blank">Nemue Scanner</a></li>
+                        <li><a href="https://github.com/supunhg/CoCo" target="_blank">CoCo Framework</a></li>
+                        <li><a href="https://github.com/supunhg/ShellHooks" target="_blank">ShellHooks</a></li>
+                        <li><a href="https://github.com/supunhg/GTFOBins-CLI" target="_blank">GTFOBins-CLI</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://tryhackme.com" target="_blank">TryHackMe</a></li>
+                        <li><a href="https://hackthebox.com" target="_blank">HackTheBox</a></li>
+                        <li><a href="https://picoctf.org" target="_blank">picoCTF</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Supun Hewagamage. All rights reserved.</p>
+                <p style="margin-top: 0.5rem; font-style: italic;">"Evolve daily, or decay quietly."</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
