@@ -14,9 +14,11 @@ This repository contains the source code for my personal portfolio website hoste
 ## 📋 Features
 
 - **Multi-page Layout**: Home, Projects, Blog, and Contact pages
-- **Dark Cybersecurity Theme**: Royal blue accents with dynamic particle animations
+- **Modern Glassmorphism Design**: Royal blue accents with glassmorphic UI elements
+- **Dark Cybersecurity Theme**: Professional dark theme with dynamic particle animations
 - **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
 - **Dynamic Effects**: Particle canvas, typing animations, smooth scrolling
+- **Easy Project Management**: JSON-based project data for simple updates
 - **SEO Optimized**: Proper meta tags and semantic HTML
 - **No Dependencies**: Pure HTML, CSS, and JavaScript (no build process)
 - **GitHub Pages Ready**: Deploy instantly with zero configuration
@@ -30,9 +32,11 @@ supunhg.github.io/
 ├── blog.html          # Blog listing page
 ├── contact.html       # Contact information
 ├── css/
-│   └── styles.css     # Main stylesheet
+│   └── styles.css     # Main stylesheet (with glassmorphism)
 ├── js/
-│   └── main.js        # JavaScript functionality
+│   ├── main.js        # JavaScript functionality
+│   └── projects-data.js # Project data for easy management
+├── BLOG_GUIDE.md      # Blog post creation guide
 └── README.md          # This file
 ```
 
@@ -84,7 +88,7 @@ This is a static site with manual blog management:
 
 ## 🎯 Customization
 
-### Colors
+### Colors & Theme
 Edit CSS variables in `css/styles.css`:
 ```css
 :root {
@@ -92,6 +96,18 @@ Edit CSS variables in `css/styles.css`:
     --electric-blue: #00d4ff;
     --dark-bg: #0a0e1a;
 }
+```
+
+### Managing Projects
+Edit `js/projects-data.js` to add/remove/update projects:
+```javascript
+featured: [
+    {
+        title: "Your Project",
+        description: "Description here",
+        // ... other fields
+    }
+]
 ```
 
 ### Animations
